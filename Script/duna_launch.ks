@@ -2,9 +2,6 @@ lock steering to up.
 rcs on.
 
 
-//set STEERINGMANAGER:PITCHPID:KD to STEERINGMANAGER:PITCHPID:KD * 2 + 1. 
-//set STEERINGMANAGER:YAWPID:KD to STEERINGMANAGER:YAWPID:KD * 2 + 1.  
-
 
 lock throttle to 1.
 
