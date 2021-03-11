@@ -1,0 +1,22 @@
+
+// 
+
+set t to 10000. 
+set z to -10.
+
+until z > 10 { 
+	set test2 to NODE( TIME:SECONDS + t, 0, z, 0).  
+	add test2.  
+	if encounter <> "None" {
+//		print z + " has peri " + encounter:periapsis.  
+		if encounter:periapsis < peri { 
+			set test to NODE(TIME:SECONDS + t, 0, z, 0).  
+			set peri to encounter:periapsis. 
+			print z  + " New Peri " + peri. 
+		}
+	}
+	set z to z + 0.11.  
+	remove test2.  
+}
+
+add test.  
